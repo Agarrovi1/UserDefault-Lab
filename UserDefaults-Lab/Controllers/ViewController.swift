@@ -13,6 +13,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
+    @IBAction func saveButtonPressed(_ sender: UIButton) {
+        if let text = nameTextField.text {
+            
+        }
+    }
     
     private func getDateFromPicker() -> (month: String, day: String) {
         let month = datePicker.date.description.components(separatedBy: "-")[1]
@@ -29,3 +34,9 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        resignFirstResponder()
+        return true
+    }
+}

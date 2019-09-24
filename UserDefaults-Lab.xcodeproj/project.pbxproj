@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D9B4D3C233AB2C0004244C4 /* UserDefaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9B4D3B233AB2C0004244C4 /* UserDefaultWrapper.swift */; };
 		4DA021F2233A9A9600FABFCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA021F1233A9A9600FABFCC /* AppDelegate.swift */; };
 		4DA021F4233A9A9600FABFCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA021F3233A9A9600FABFCC /* SceneDelegate.swift */; };
 		4DA021F6233A9A9600FABFCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA021F5233A9A9600FABFCC /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D9B4D3B233AB2C0004244C4 /* UserDefaultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultWrapper.swift; sourceTree = "<group>"; };
 		4DA021EE233A9A9600FABFCC /* UserDefaults-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UserDefaults-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA021F1233A9A9600FABFCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DA021F3233A9A9600FABFCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				4DA0221B233A9E6C00FABFCC /* HoroscopeAPIHelper.swift */,
 				4DA0221D233A9EB900FABFCC /* Horoscope.swift */,
 				4DA0221F233AA7E200FABFCC /* getSignFromDate.swift */,
+				4D9B4D3B233AB2C0004244C4 /* UserDefaultWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				4DA02218233A9C3B00FABFCC /* NetworkHelper.swift in Sources */,
 				4DA0221E233A9EB900FABFCC /* Horoscope.swift in Sources */,
 				4DA0221C233A9E6C00FABFCC /* HoroscopeAPIHelper.swift in Sources */,
+				4D9B4D3C233AB2C0004244C4 /* UserDefaultWrapper.swift in Sources */,
 				4DA02220233AA7E200FABFCC /* getSignFromDate.swift in Sources */,
 				4DA021F6233A9A9600FABFCC /* ViewController.swift in Sources */,
 				4DA0221A233A9C8700FABFCC /* AppError.swift in Sources */,
