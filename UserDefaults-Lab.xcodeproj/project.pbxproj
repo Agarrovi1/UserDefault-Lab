@@ -16,6 +16,8 @@
 		4DA02209233A9A9900FABFCC /* UserDefaults_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA02208233A9A9900FABFCC /* UserDefaults_LabTests.swift */; };
 		4DA02218233A9C3B00FABFCC /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA02217233A9C3B00FABFCC /* NetworkHelper.swift */; };
 		4DA0221A233A9C8700FABFCC /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA02219233A9C8700FABFCC /* AppError.swift */; };
+		4DA0221C233A9E6C00FABFCC /* HoroscopeAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA0221B233A9E6C00FABFCC /* HoroscopeAPIHelper.swift */; };
+		4DA0221E233A9EB900FABFCC /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA0221D233A9EB900FABFCC /* Horoscope.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		4DA0220A233A9A9900FABFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DA02217233A9C3B00FABFCC /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		4DA02219233A9C8700FABFCC /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		4DA0221B233A9E6C00FABFCC /* HoroscopeAPIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeAPIHelper.swift; sourceTree = "<group>"; };
+		4DA0221D233A9EB900FABFCC /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 			children = (
 				4DA02217233A9C3B00FABFCC /* NetworkHelper.swift */,
 				4DA02219233A9C8700FABFCC /* AppError.swift */,
+				4DA0221B233A9E6C00FABFCC /* HoroscopeAPIHelper.swift */,
+				4DA0221D233A9EB900FABFCC /* Horoscope.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,6 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DA02218233A9C3B00FABFCC /* NetworkHelper.swift in Sources */,
+				4DA0221E233A9EB900FABFCC /* Horoscope.swift in Sources */,
+				4DA0221C233A9E6C00FABFCC /* HoroscopeAPIHelper.swift in Sources */,
 				4DA021F6233A9A9600FABFCC /* ViewController.swift in Sources */,
 				4DA0221A233A9C8700FABFCC /* AppError.swift in Sources */,
 				4DA021F2233A9A9600FABFCC /* AppDelegate.swift in Sources */,
