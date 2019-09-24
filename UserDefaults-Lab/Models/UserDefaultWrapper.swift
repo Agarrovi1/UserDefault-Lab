@@ -14,7 +14,9 @@ class UserDefaultWrapper {
     static let manager = UserDefaultWrapper()
     
     private let nameKey = "name"
-    private let birthdayKey = "birthday"
+    private let birthMonthKey = "month"
+    private let birthDayKey = "day"
+    
     
     //MARK: - Gets
     func getName() -> String? {
@@ -25,8 +27,8 @@ class UserDefaultWrapper {
     }
     
     func getBirthday() -> (month:String,day:String)? {
-        if let birthday = UserDefaults.value(forKey: birthdayKey) as? (String,String) {
-            return birthday
+        if let birthMonth = UserDefaults.standard.value(forKey: birthMonthKey) as? String, let birthDay = UserDefaults.standard.value(forKey: birthDayKey) as? String {
+            return (birthMonth,birthDay)
         }
         return nil
     }
@@ -37,7 +39,8 @@ class UserDefaultWrapper {
     }
     
     func store(birthdayInfo: (month:String,day:String)) {
-        UserDefaults.standard.set(birthdayInfo, forKey: birthdayKey)
+        UserDefaults.standard.set(birthdayInfo.month, forKey: birthMonthKey)
+        UserDefaults.standard.set(birthdayInfo.day, forKey: birthDayKey)
     }
     
 }

@@ -12,6 +12,12 @@ struct Horoscope: Codable {
     let horoscope: String
     let meta: Meta
     
+    init () {
+        sunsign = ""
+        horoscope = ""
+        meta = Meta(mood: "", keywords: "", intensity: "")
+    }
+    
     static func getHoroscope(url: URL, completionHandler: @escaping (Result<Horoscope,AppError>) -> ()) {
         NetworkHelper.manager.performDataTask(withUrl: url, andMethod: HTTPMethod.get) { (result) in
             switch result {
