@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    //MARK: - IBOutlets
     @IBOutlet weak var noDefaultView: UIView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sunsignLabel: UILabel!
     @IBOutlet weak var horoscopeTextView: UITextView!
     
+    //MARK: - Properties
     var horoscope = Horoscope() {
         didSet {
             showHoroscopeView()
@@ -26,6 +28,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //MARK: - IBActions
     @IBAction func saveButtonPressed(_ sender: UIButton) {
         if let text = nameTextField.text {
             let birthDate = getDateFromPicker()
@@ -43,7 +46,7 @@ class ViewController: UIViewController {
     
     
     //MARK: - Private func
-    func loadHoroscopeData(birthDate: (String,String)) {
+    private func loadHoroscopeData(birthDate: (String,String)) {
         let sunsign = getSignFromDate(tuple: birthDate)
         HoroscopeAPIHelper.manager.getHoroscopeInfo(sunsign: sunsign) { (result) in
             switch result {
@@ -94,6 +97,7 @@ class ViewController: UIViewController {
         //example: 2019-09-24
     }
     
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         showSpecificView()
