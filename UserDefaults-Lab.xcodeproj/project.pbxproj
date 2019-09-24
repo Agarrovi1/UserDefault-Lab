@@ -79,12 +79,12 @@
 		4DA021F0233A9A9600FABFCC /* UserDefaults-Lab */ = {
 			isa = PBXGroup;
 			children = (
-				4DA021F1233A9A9600FABFCC /* AppDelegate.swift */,
-				4DA021F3233A9A9600FABFCC /* SceneDelegate.swift */,
-				4DA021F5233A9A9600FABFCC /* ViewController.swift */,
+				4DA02216233A9B8900FABFCC /* Models */,
+				4DA02215233A9B7F00FABFCC /* Views */,
+				4DA02214233A9B6900FABFCC /* Controllers */,
 				4DA021F7233A9A9600FABFCC /* Main.storyboard */,
+				4DA02213233A9B5200FABFCC /* Support Files */,
 				4DA021FA233A9A9800FABFCC /* Assets.xcassets */,
-				4DA021FC233A9A9800FABFCC /* LaunchScreen.storyboard */,
 				4DA021FF233A9A9800FABFCC /* Info.plist */,
 			);
 			path = "UserDefaults-Lab";
@@ -97,6 +97,38 @@
 				4DA0220A233A9A9900FABFCC /* Info.plist */,
 			);
 			path = "UserDefaults-LabTests";
+			sourceTree = "<group>";
+		};
+		4DA02213233A9B5200FABFCC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DA021F1233A9A9600FABFCC /* AppDelegate.swift */,
+				4DA021F3233A9A9600FABFCC /* SceneDelegate.swift */,
+				4DA021FC233A9A9800FABFCC /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		4DA02214233A9B6900FABFCC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DA021F5233A9A9600FABFCC /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4DA02215233A9B7F00FABFCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DA02216233A9B8900FABFCC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
