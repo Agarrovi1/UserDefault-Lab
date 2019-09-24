@@ -31,8 +31,14 @@ class ViewController: UIViewController {
             let birthDate = getDateFromPicker()
             UserDefaultWrapper.manager.store(name: text)
             UserDefaultWrapper.manager.store(birthdayInfo: birthDate)
-            
+            loadHoroscopeData(birthDate: birthDate)
+            showHoroscopeView()
         }
+    }
+    
+    
+    @IBAction func editButtonPressed(_ sender: UIButton) {
+        showNoDefaultView()
     }
     
     
